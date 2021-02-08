@@ -3,41 +3,50 @@
 <html>
 
 <head>
-  <!-- Metadatos, título y favicon -->
+  <!-- Metadatos, favicon y título -->
   <meta charset="utf-8">
+
   <link rel="icon" type="image/png" href="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png"/>
+
   <title> Malum's </title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+  
   <!-- Bootstrap Javascript -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-  <!-- Estilos CSS -->
+  <!-- Añadiendo/cambiando estilos -->
   <style>
-	body  {
-	  background-image: url("https://c4.wallpaperflare.com/wallpaper/849/858/484/blade-runner-blade-runner-2049-digital-art-wallpaper-preview.jpg");
+
+  	.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    	background-color: #8A2BE2 !important;
 	}
+
+	.ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+
   </style>
 
 </head>
 
-<body>
+<body background="https://i.pinimg.com/originals/ea/3a/67/ea3a672c7219ee1eb3f83a3982652c81.jpg">
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
       <!-- Lista de pestañas -->
       <div class="collapse navbar-collapse" id="navbarNav">
 
+      <!-- Lista de pestañas -->
         <ul class="navbar-nav">
-          <!-- Home -->
+          <!-- Logo -->
           <li class="nav-item active">
             <a class="nav-link" href="#">
 				<!-- Rótulo -->
@@ -68,10 +77,50 @@
           </li>
 
         </ul>
+
+        <!-- Buscador -->
+		<form class="form-inline">
+		   <button type="button" class="btn btn-secondary">Search Your Music!</button>
+		</form>
+
       </div>
 	</nav>
 
+	<!-- Cuerpo de la aplicación -->
+	<div class="container">
 
+		<div class="row mt-3">
+
+		    <!-- Carta cool de presentación de la app-->
+			<div class="card" style=" width: 20rem;height: 13rem;">
+		      <!-- Cabecera de la carta cool-->
+			  <h5 class="card-header">
+				  What is Malum's
+				  <!-- Logo -->
+				  <img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
+				  ?
+			  </h5>
+
+			  <!-- Cuerpo de la carta cool-->
+			  <div class="card-body">
+			  	<!-- Texto de la carta -->
+			    <p class="card-text"> 
+				  Malum's
+				  <!-- Logo -->
+				  <img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
+				  is a friendly spotify interface for a better managing of music queues.
+
+			    </p>
+			    <!-- Botón para chequear tutorial -->
+			    <a href="#" class="btn btn-secondary">Check tutorial</a>
+
+			  </div>
+
+			</div>
+
+		</div>
+
+	</div>
   <!-- Scripts de JS -->
   <!-- <script src="js/script.js"></script> -->
 
