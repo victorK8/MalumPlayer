@@ -19,4 +19,5 @@ Repositorio para un reproductor online de música basado en Spotify.
 
 ## Links
 
-	[1] https://developer.spotify.com/documentation/web-api/ [API de Spotify]
+	[1] https://developer.spotify.com/documentation/web-api/reference/ [API de Spotify]
+	[2] https://developer.spotify.com/documentation/general/guides/authorization-guide/ [Authorization flow]
