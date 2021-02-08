@@ -3,6 +3,12 @@
 Repositorio para un reproductor online de música basado en Spotify.
 
 
+## Proyecto
+
+	Las canciones que se añaden en la cola en Spotify, no se ven en ninguna lista. Y no puedes observar que canciones hay, ni en que orden están.
+
+	Este mini-proyecto nace para dar una nueva interfaz a Spotify que permita al usuario un mejor manejo de las colas.
+
 ## Contenido del repositorio
 
 	|- README.md
