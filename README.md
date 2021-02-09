@@ -9,6 +9,10 @@ Repositorio para un reproductor online de música basado en Spotify.
 
 	Este mini-proyecto nace para dar una nueva interfaz a Spotify que permita al usuario un mejor manejo de las colas.
 
+## Proceso
+
+	Creando un index guapete.
+
 ## Contenido del repositorio
 
 	|- README.md
@@ -21,3 +25,4 @@ Repositorio para un reproductor online de música basado en Spotify.
 
 	[1] https://developer.spotify.com/documentation/web-api/reference/ [API de Spotify]
 	[2] https://developer.spotify.com/documentation/general/guides/authorization-guide/ [Authorization flow]
+	[3] https://developer.spotify.com/documentation/web-playback-sdk/ [Web Player SDK]

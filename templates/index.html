@@ -20,17 +20,24 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
+
   <!-- Añadiendo/cambiando estilos -->
   <style>
 
+  	/* Pongo botón secundario a morado*/
   	.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
     	background-color: #8A2BE2 !important;
 	}
 
-	.ml-auto .dropdown-menu {
-      left: auto !important;
-      right: 0px;
-    }
+	/* Pongo logo en barra de navegación a morado*/
+    .navbar-brand {
+		color:  #8A2BE2 !important;
+		}
+
+    /* Pongo texto barra de navegación a morado*/
+    .nav-link {
+		color:  #8A2BE2 !important;
+		}
 
   </style>
 
@@ -39,49 +46,56 @@
 <body background="https://i.pinimg.com/originals/ea/3a/67/ea3a672c7219ee1eb3f83a3982652c81.jpg">
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-purple bg-dark">
+
+	  <!-- Logo -->
+      <a class="navbar-brand mt-2 mb-2" href="index.html">
+		<!-- Rótulo -->
+		Malum's
+		<!-- Logo -->
+		<img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
+      </a>
 
       <!-- Lista de pestañas -->
       <div class="collapse navbar-collapse" id="navbarNav">
 
-      <!-- Lista de pestañas -->
-        <ul class="navbar-nav">
-          <!-- Logo -->
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-				<!-- Rótulo -->
-				Malum's
-				<!-- Logo -->
-				<img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
-            </a>
-          </li>
+        <!-- Lista de pestañas -->
+        <ul class="navbar-nav mt-2 mb-2">
 
           <!-- Playlists del usuario -->
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#"> Playlists </a>
           </li>
 
           <!-- Downloads del usuario -->
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#"> Downloads </a>
           </li>
 
           <!-- Add Ons del usuario -->
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#"> Add Ons </a>
           </li>
 
           <!-- Profile del usuario -->
-          <li class="nav-item active">
-            <a class="nav-link" href="#"> Profile </a>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"> Profile </a>
           </li>
-
         </ul>
 
         <!-- Buscador -->
-		<form class="form-inline">
-		   <button type="button" class="btn btn-secondary">Search Your Music!</button>
-		</form>
+	    <form class="form-inline my-2 my-lg-0">
+	   	 <div class="input-group mx-sm-5">
+             <!-- Input -->
+	     	 <input type="text" class="form-control" placeholder="Search your favourite song" aria-label="Username" aria-describedby="basic-addon1" id="search-value">
+             <!-- Button -->
+  	      	 <div class="input-group-prepend">
+  	      	 	<button type="button" class="btn btn-secondary">
+  	      	 		<img src="../css/search-solid.svg" width="20" height="20"> 	
+  	      	 	</button>
+	      	 </div>
+	     </div>
+	 	</form>
 
       </div>
 	</nav>
@@ -89,40 +103,65 @@
 	<!-- Cuerpo de la aplicación -->
 	<div class="container">
 
-		<div class="row mt-3">
+		    <!-- Primera fila -->
+			<div class="row mt-3">
+			    <!-- Carta cool de presentación de la app-->
+				<div class="card" style=" width: 20rem;height: 13rem;">
+			      <!-- Cabecera de la carta cool-->
+				  <h5 class="card-header">
+					  What is Malum's
+					  <!-- Logo -->
+					  <img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
+					  ?
+				  </h5>
 
-		    <!-- Carta cool de presentación de la app-->
-			<div class="card" style=" width: 20rem;height: 13rem;">
-		      <!-- Cabecera de la carta cool-->
-			  <h5 class="card-header">
-				  What is Malum's
-				  <!-- Logo -->
-				  <img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
-				  ?
-			  </h5>
+				  <!-- Cuerpo de la carta cool-->
+				  <div class="card-body">
+				  	<!-- Texto de la carta -->
+				    <p class="card-text"> 
+					  Malum's
+					  <!-- Logo -->
+					  <img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
+					  is a friendly spotify interface for a better managing of music queues.
 
-			  <!-- Cuerpo de la carta cool-->
-			  <div class="card-body">
-			  	<!-- Texto de la carta -->
-			    <p class="card-text"> 
-				  Malum's
-				  <!-- Logo -->
-				  <img src="https://images.emojiterra.com/twitter/v13.0/512px/1f60e.png" width="25" height="25"> 
-				  is a friendly spotify interface for a better managing of music queues.
-
-			    </p>
-			    <!-- Botón para chequear tutorial -->
-			    <a href="#" class="btn btn-secondary">Check tutorial</a>
-
-			  </div>
-
+				    </p>
+				    <!-- Botón para chequear tutorial -->
+				    <a href="#" class="btn btn-secondary">Check tutorial</a>
+				  </div>
+				</div>
 			</div>
 
-		</div>
+		    <!-- Segunda fila -->
+			<div class="row mt-3">
+			    <!-- Carta cool de login-->
+				<div class="card" style=" width: 20rem;height: 13rem;">
+			      <!-- Cabecera de la carta cool-->
+				  <h5 class="card-header">Login</h5>
 
+				  <!-- Cuerpo de la carta cool-->
+				  <div class="card-body">
+					  	<!-- Texto de la carta -->
+					    <p class="card-text"> Login via google, facebook or spotify account. </p>
+					    <!-- Botón google-->
+					    <a href="profile.html?by=google" class="btn btn-secondary">
+					    	<img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" width="55" height="55"> 	
+					    </a>
+					    <!-- Botón fb -->
+					    <a href="profile.html?by=fb" class="btn btn-secondary">
+					    	<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+							  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+							</svg>	
+					    </a>
+					    <!-- Botón spotify-->
+					    <a href="profile.html?by=spotify" class="btn btn-secondary">
+					    	<img src="../css/spotify.svg" width="55" height="55"> 	
+					    </a>
+				  </div>
+				</div>
+			</div>
 	</div>
   <!-- Scripts de JS -->
-  <!-- <script src="js/script.js"></script> -->
+  <script src="../js/script.js"></script> 
 
 </body>
 
